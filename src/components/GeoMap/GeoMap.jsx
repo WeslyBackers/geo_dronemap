@@ -1,11 +1,15 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-//import { Test } from './GeoMap.styles';
+import GeoInfo from '../GeoInfo/GeoInfo';
+
+
 import { MapContainer } from 'react-leaflet';
 import { TileLayer } from 'react-leaflet/TileLayer';
 import { useMap } from 'react-leaflet/hooks';
 import { Marker } from 'react-leaflet';
 import { Popup } from 'react-leaflet';
+
+
 
 class GeoMap extends PureComponent { 
   constructor(props) {
@@ -49,8 +53,8 @@ class GeoMap extends PureComponent {
 
     return (
 
-      <div className="GeoMapWrapper">
-        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+      <div className="GeoMapWrapper map-id row" id="map-id">
+        <MapContainer  center={[51.305, 3.00]} zoom={13} scrollWheelZoom={false}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
