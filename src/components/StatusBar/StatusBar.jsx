@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-//import { Test } from './AppVersion.styles';
-import { Badge } from 'react-bootstrap';
-class AppVersion extends PureComponent { 
+//import { Test } from './StatusBar.styles';
+import '../../css/statusbar.css';
+
+class StatusBar extends PureComponent { 
   constructor(props) {
     super(props);
 
@@ -12,27 +13,27 @@ class AppVersion extends PureComponent {
   }
 
   componentWillMount = () => {
-    console.log('AppVersion will mount');
+    console.log('StatusBar will mount');
   }
 
   componentDidMount = () => {
-    console.log('AppVersion mounted');
+    console.log('StatusBar mounted');
   }
 
   componentWillReceiveProps = (nextProps) => {
-    console.log('AppVersion will receive props', nextProps);
+    console.log('StatusBar will receive props', nextProps);
   }
 
   componentWillUpdate = (nextProps, nextState) => {
-    console.log('AppVersion will update', nextProps, nextState);
+    console.log('StatusBar will update', nextProps, nextState);
   }
 
   componentDidUpdate = () => {
-    console.log('AppVersion did update');
+    console.log('StatusBar did update');
   }
 
   componentWillUnmount = () => {
-    console.log('AppVersion will unmount');
+    console.log('StatusBar will unmount');
   }
 
   render () {
@@ -40,19 +41,19 @@ class AppVersion extends PureComponent {
       return <h1>Something went wrong.</h1>;
     }
     return (
-      <div className="AppVersionWrapper me-3">
-        <Badge bg='info' className='p-2'>v1.0</Badge>
+      <div className="StatusBarWrapper ms-2 me-3">
+        Status bar
       </div>
     );
   }
 }
 
-AppVersion.propTypes = {
+StatusBar.propTypes = {
   // bla: PropTypes.string,
 };
 
-AppVersion.defaultProps = {
+StatusBar.defaultProps = {
   // bla: 'test',
 };
 
-export default AppVersion;
+export default StatusBar;

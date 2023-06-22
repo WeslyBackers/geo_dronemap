@@ -52,14 +52,14 @@ class GeoMap extends PureComponent {
     }
 
     return (
-
-      <div className="GeoMapWrapper map-id row" id="map-id">
+      //Define map layout
+      <div className="GeoMapWrapper map-id row rounded" id="map-id">
         <MapContainer  center={[51.305, 3.00]} zoom={13} scrollWheelZoom={false}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={[51.505, -0.09]}>
+          <Marker position={[51.305, 3.09]}>
             <Popup>
               A pretty CSS3 popup. <br /> Easily customizable.
             </Popup>

@@ -1,4 +1,6 @@
-.GeoInfoWrapper {
-    width: 35vw;
-    height: 75vh;
-  }
+.GeoInfoWrapper > .CardInfo {
+
+    background-color: rgb(230, 230, 230);
+    margin: 2px;
+
+}

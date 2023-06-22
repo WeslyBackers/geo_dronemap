@@ -5,15 +5,19 @@ import 'leaflet/dist/leaflet.css';
 import '../src/css/geomap.css';
 import GeoContainer from './components/GeoContainer/GeoContainer';
 
+
+
 // Bootstrap Bundle JS
 import TitleBar from './components/TitleBar/TitleBar';
-import GeoMap from './components/GeoMap/GeoMap';
+import StatusBar from './components/StatusBar/StatusBar';
+
 
 function App() {
   return (
-    <div className="App d-flex row">
+    <div className="App col">
       <TitleBar></TitleBar>
       <GeoContainer></GeoContainer>
+      <StatusBar></StatusBar>
     </div>
   );
 }

@@ -1,6 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import { Card } from 'react-bootstrap';
+
 //import { Test } from './GeoInfo.styles';
+import '../../css/geoinfo.css';
 
 class GeoInfo extends PureComponent { 
   constructor(props) {
@@ -40,8 +43,11 @@ class GeoInfo extends PureComponent {
       return <h1>Something went wrong.</h1>;
     }
     return (
-      <div className="GeoInfoWrapper">
-        Test content
+      <div className="GeoInfoWrapper col row m-2 me-3">
+        <Card className='CardInfo'>
+          <h4 className='flex text-center mt-4'>Geographical Information</h4>
+          <hr></hr>
+        </Card>
       </div>
     );
   }

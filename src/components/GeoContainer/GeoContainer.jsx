@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import GeoMap from '../GeoMap/GeoMap';
 import GeoInfo from '../GeoInfo/GeoInfo';
 
+import axios from 'axios';
 
 //import { Test } from './GeoContainer.styles';
 import '../../css/geocontainer.css';
@@ -23,6 +24,7 @@ class GeoContainer extends PureComponent {
 
   componentDidMount = () => {
     console.log('GeoContainer mounted');
+
   }
 
   componentWillReceiveProps = (nextProps) => {
@@ -35,6 +37,9 @@ class GeoContainer extends PureComponent {
 
   componentDidUpdate = () => {
     console.log('GeoContainer did update');
+    axios.get('https://services3.arcgis.com/om3vWi08kAyoBbj3/arcgis/rest/services/Geozone_Download_Prod/FeatureServer/0?f=pjson').then(response => {
+      console.log(response);
+    });
   }
 
   componentWillUnmount = () => {
@@ -46,10 +51,12 @@ class GeoContainer extends PureComponent {
       return <h1>Something went wrong.</h1>;
     }
     return (
-      <div className="GeoContainerWrapper d-flex flex-row ">
+
+      <div className="GeoContainerWrapper d-flex col">
         <GeoMap></GeoMap>
         <GeoInfo></GeoInfo>
       </div>
+
     );
   }
 }

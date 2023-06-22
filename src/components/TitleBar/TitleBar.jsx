@@ -44,11 +44,11 @@ class TitleBar extends PureComponent {
     }
     return (
       <div className="TitleBarWrapper d-flex bg-dark text-white align-items-center justify-content-between">
-        <Navbar className='d-flex mx-3'>
-          <h2>DroneMap</h2><h3>Europe</h3>
+        <Navbar className='d-flex ms-3'>
+          <h2 className='d-flex'>DroneMap</h2><h3 className='d-flex text-center'>Europe</h3>
         </Navbar>
-        <ToolBar></ToolBar>
-        <AppVersion className='flex'></AppVersion>
+        <ToolBar className=''></ToolBar>
+        <AppVersion className='d-flex me-2'></AppVersion>
       </div>
     );
   }
