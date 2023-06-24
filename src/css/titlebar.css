@@ -1,0 +1,10 @@
+.title-zone{
+    color: rgba(255, 254, 254, 0.856);
+}
+
+.TitleBarWrapper{
+    background-repeat: no-repeat;
+    background-position: center + calc(width/3);
+    background-size: contain;
+    background-image: url('../../src/img/th.jpg');
+}

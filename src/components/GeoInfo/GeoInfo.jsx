@@ -43,9 +43,9 @@ class GeoInfo extends PureComponent {
       return <h1>Something went wrong.</h1>;
     }
     return (
-      <div className="GeoInfoWrapper col row m-2 me-3">
+      <div className="GeoInfoWrapper col row m-1 me-3">
         <Card className='CardInfo'>
-          <h4 className='flex text-center mt-4'>Geographical Information</h4>
+          <h4 className='flex text-center mt-4'>Geographical UAS</h4>
           <hr></hr>
         </Card>
       </div>

@@ -41,7 +41,7 @@ class StatusBar extends PureComponent {
       return <h1>Something went wrong.</h1>;
     }
     return (
-      <div className="StatusBarWrapper ms-2 me-3">
+      <div className="StatusBarWrapper ms-2 me-2 p-">
         Status bar
       </div>
     );
