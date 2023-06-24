@@ -45,7 +45,7 @@ class ToolBar extends PureComponent {
     return (
       <div className="ToolBarWrapper text-white">
         <Navbar className='d-flex col justify-content-center'>
-          <Button className='btn-primary mx-2 p-2'>Country</Button>
+          <Button className='btn-primary mx-2 p-2'>Search</Button>
           <Button className='btn-secondary mx-2 p-2'>Legend</Button>
           <Button className='btn-warning mx-2 p-2'>Legislation</Button>
           <Button className='btn-info mx-2 ms-5'>Contact</Button>
