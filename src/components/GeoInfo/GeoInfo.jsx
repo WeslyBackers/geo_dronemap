@@ -14,9 +14,9 @@ class GeoInfo extends PureComponent {
     };
   }
 
-  componentWillMount = () => {
+/*   componentWillMount = () => {
     console.log('GeoInfo will mount');
-  }
+  } */
 
   componentDidMount = () => {
     console.log('GeoInfo mounted');

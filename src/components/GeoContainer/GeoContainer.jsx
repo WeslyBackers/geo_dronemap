@@ -18,9 +18,9 @@ class GeoContainer extends PureComponent {
     };
   }
 
-  componentWillMount = () => {
+/*   componentWillMount = () => {
     console.log('GeoContainer will mount');
-  }
+  } */
 
   componentDidMount = () => {
     console.log('GeoContainer mounted');

@@ -20,9 +20,9 @@ class GeoMap extends PureComponent {
     };
   }
 
-  componentWillMount = () => {
+ /*  componentWillMount = () => {
     console.log('GeoMap will mount');
-  }
+  } */
 
   componentDidMount = () => {
     console.log('GeoMap mounted');
@@ -54,7 +54,7 @@ class GeoMap extends PureComponent {
     return (
       //Define map layout
       <div className="GeoMapWrapper map-id row rounded" id="map-id">
-        <MapContainer  center={[51.305, 3.00]} zoom={13} scrollWheelZoom={false}>
+        <MapContainer  center={[51.305, 3.00]} zoom={13} scrollWheelZoom={true}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

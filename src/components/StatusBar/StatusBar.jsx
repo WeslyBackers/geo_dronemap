@@ -12,9 +12,9 @@ class StatusBar extends PureComponent {
     };
   }
 
-  componentWillMount = () => {
+/*   componentWillMount = () => {
     console.log('StatusBar will mount');
-  }
+  } */
 
   componentDidMount = () => {
     console.log('StatusBar mounted');

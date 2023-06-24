@@ -11,9 +11,9 @@ class AppVersion extends PureComponent {
     };
   }
 
-  componentWillMount = () => {
+/*   componentWillMount = () => {
     console.log('AppVersion will mount');
-  }
+  } */
 
   componentDidMount = () => {
     console.log('AppVersion mounted');

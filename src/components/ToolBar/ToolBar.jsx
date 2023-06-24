@@ -14,9 +14,9 @@ class ToolBar extends PureComponent {
     };
   }
 
-  componentWillMount = () => {
+/*   componentWillMount = () => {
     console.log('ToolBar will mount');
-  }
+  } */
 
   componentDidMount = () => {
     console.log('ToolBar mounted');

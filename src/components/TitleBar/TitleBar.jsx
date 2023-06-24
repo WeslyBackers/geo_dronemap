@@ -14,9 +14,9 @@ class TitleBar extends PureComponent {
     };
   }
 
-  componentWillMount = () => {
+/*   componentWillMount = () => {
     console.log('TitleBar will mount');
-  }
+  } */
 
   componentDidMount = () => {
     console.log('TitleBar mounted');
