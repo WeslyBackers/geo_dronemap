@@ -22,13 +22,13 @@ class GeoInfo extends PureComponent {
     console.log('GeoInfo mounted');
   }
 
-  componentWillReceiveProps = (nextProps) => {
+/*   componentWillReceiveProps = (nextProps) => {
     console.log('GeoInfo will receive props', nextProps);
-  }
+  } */
 
-  componentWillUpdate = (nextProps, nextState) => {
+/*   componentWillUpdate = (nextProps, nextState) => {
     console.log('GeoInfo will update', nextProps, nextState);
-  }
+  } */
 
   componentDidUpdate = () => {
     console.log('GeoInfo did update');

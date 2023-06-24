@@ -22,13 +22,13 @@ class ToolBar extends PureComponent {
     console.log('ToolBar mounted');
   }
 
-  componentWillReceiveProps = (nextProps) => {
+/*   componentWillReceiveProps = (nextProps) => {
     console.log('ToolBar will receive props', nextProps);
-  }
+  } */
 
-  componentWillUpdate = (nextProps, nextState) => {
+/*   componentWillUpdate = (nextProps, nextState) => {
     console.log('ToolBar will update', nextProps, nextState);
-  }
+  } */
 
   componentDidUpdate = () => {
     console.log('ToolBar did update');

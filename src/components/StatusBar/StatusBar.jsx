@@ -20,13 +20,13 @@ class StatusBar extends PureComponent {
     console.log('StatusBar mounted');
   }
 
-  componentWillReceiveProps = (nextProps) => {
+/*   componentWillReceiveProps = (nextProps) => {
     console.log('StatusBar will receive props', nextProps);
-  }
+  } */
 
-  componentWillUpdate = (nextProps, nextState) => {
+/*   componentWillUpdate = (nextProps, nextState) => {
     console.log('StatusBar will update', nextProps, nextState);
-  }
+  } */
 
   componentDidUpdate = () => {
     console.log('StatusBar did update');

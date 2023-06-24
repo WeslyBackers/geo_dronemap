@@ -27,14 +27,14 @@ class GeoMap extends PureComponent {
   componentDidMount = () => {
     console.log('GeoMap mounted');
   }
-
+/* 
   componentWillReceiveProps = (nextProps) => {
     console.log('GeoMap will receive props', nextProps);
-  }
-
+  } */
+/* 
   componentWillUpdate = (nextProps, nextState) => {
     console.log('GeoMap will update', nextProps, nextState);
-  }
+  } */
 
   componentDidUpdate = () => {
     console.log('GeoMap did update');

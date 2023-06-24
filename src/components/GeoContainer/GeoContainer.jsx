@@ -27,13 +27,13 @@ class GeoContainer extends PureComponent {
 
   }
 
-  componentWillReceiveProps = (nextProps) => {
+/*   componentWillReceiveProps = (nextProps) => {
     console.log('GeoContainer will receive props', nextProps);
-  }
+  } */
 
-  componentWillUpdate = (nextProps, nextState) => {
+/*   componentWillUpdate = (nextProps, nextState) => {
     console.log('GeoContainer will update', nextProps, nextState);
-  }
+  } */
 
   componentDidUpdate = () => {
     console.log('GeoContainer did update');

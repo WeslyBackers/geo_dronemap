@@ -22,17 +22,17 @@ class TitleBar extends PureComponent {
     console.log('TitleBar mounted');
   }
 
-  componentWillReceiveProps = (nextProps) => {
+/*   componentWillReceiveProps = (nextProps) => {
     console.log('TitleBar will receive props', nextProps);
-  }
+  } */
 
-  componentWillUpdate = (nextProps, nextState) => {
+/*   componentWillUpdate = (nextProps, nextState) => {
     console.log('TitleBar will update', nextProps, nextState);
-  }
+  } */
 
-  componentDidUpdate = () => {
+/*   componentDidUpdate = () => {
     console.log('TitleBar did update');
-  }
+  } */
 
   componentWillUnmount = () => {
     console.log('TitleBar will unmount');

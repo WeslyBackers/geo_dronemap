@@ -19,13 +19,13 @@ class AppVersion extends PureComponent {
     console.log('AppVersion mounted');
   }
 
-  componentWillReceiveProps = (nextProps) => {
+/*   componentWillReceiveProps = (nextProps) => {
     console.log('AppVersion will receive props', nextProps);
-  }
+  } */
 
-  componentWillUpdate = (nextProps, nextState) => {
+/*   componentWillUpdate = (nextProps, nextState) => {
     console.log('AppVersion will update', nextProps, nextState);
-  }
+  } */
 
   componentDidUpdate = () => {
     console.log('AppVersion did update');
