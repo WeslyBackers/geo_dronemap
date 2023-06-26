@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import GeoMap from '../GeoMap/GeoMap';
 import GeoInfo from '../GeoInfo/GeoInfo';
-
+import data from '../../dronedata.json';
 import axios from 'axios';
 
 //import { Test } from './GeoContainer.styles';
@@ -23,8 +23,10 @@ class GeoContainer extends PureComponent {
   } */
 
   componentDidMount = () => {
-    console.log('GeoContainer mounted');
 
+    console.log('GeoContainer mounted');
+    console.log(data);
+    
   }
 
 /*   componentWillReceiveProps = (nextProps) => {
@@ -36,10 +38,7 @@ class GeoContainer extends PureComponent {
   } */
 
   componentDidUpdate = () => {
-    console.log('GeoContainer did update');
-    axios.get('https://services3.arcgis.com/om3vWi08kAyoBbj3/arcgis/rest/services/Geozone_Download_Prod/FeatureServer/0?f=pjson').then(response => {
-      console.log(response);
-    });
+    console.log("GeoContainer did update");
   }
 
   componentWillUnmount = () => {
