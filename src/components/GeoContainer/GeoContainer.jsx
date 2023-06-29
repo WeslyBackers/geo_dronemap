@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import GeoMap from '../GeoMap/GeoMap';
 import GeoInfo from '../GeoInfo/GeoInfo';
-import data from '../../dronedata.json';
 import axios from 'axios';
 
 //import { Test } from './GeoContainer.styles';
@@ -25,7 +24,7 @@ class GeoContainer extends PureComponent {
   componentDidMount = () => {
 
     console.log('GeoContainer mounted');
-    console.log(data);
+  
     
   }
 
