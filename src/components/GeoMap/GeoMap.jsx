@@ -82,7 +82,7 @@ class GeoMap extends PureComponent {
     {
       for (let x=0;x < el['geometry']['coordinates'].length;x++){
 
-        el['geometry']['coordinates']= el['geometry']['coordinates'].reverse(); 
+        el['geometry']['coordinates']= el['geometry']['coordinates']; 
 
       }
 
